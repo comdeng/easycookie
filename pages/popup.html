@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="module" src="../scripts/popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="../styles/popup.css"/>
+</head>
+<body>
+  <h1 id="logo">Easy Cookie</h1>
+  <form id="setting-form">
+    <table>
+      <tr>
+        <td>Cookie Name</td>
+        <td><input type="text" name="cookieName" required placeholder="Input the cookie name"></td>
+      </tr>
+      <tr>
+        <td>Redirect URL</td>
+        <td><input type="url" name="redirectUrl" required placeholder="Input the redirect URL"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit">Submit</button>
+          <button id="redirect-button">Redirect</button>
+        </td>
+      </tr>
+    </table>
+    <div id="success-hint">Saved successfully.</div>
+  </form>
+</body>
+</html>
